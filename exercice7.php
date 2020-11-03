@@ -62,7 +62,7 @@ if( empty($pseudo) )
 
 
 
-<form action="index.php" method="POST" >
+<form action="exercice7.php" method="POST" >
 	<p>
 		<label for="pseudo">Pseudo: </label>
 		<input type="text" id="pseudo" name="pseudo" value="<?php echo $pseudo; ?>" />
