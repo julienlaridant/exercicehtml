@@ -3,13 +3,13 @@
     //On démarre la session (à mettre à chaque page)
     session_start();
 
-    //Vérification (vite-fait, fait le à ta façon et sécurisé)
+    
     if (isset($_POST['username']) && !empty($_POST['username']) || isset($_POST['password']) && !empty($_POST['password'])) {
         if ($_POST['username'] != 'Julien' && $_POST['password'] != '1234') {
             echo 'Login ou mot de passe incorrect';
         }
         else {
-            $_SESSION['username'] = $_POST['username']; //On stocke le nom d'utilisateur pour l'afficher
+            $_SESSION['username'] = $_POST['username'];
             $_SESSION['connected'] = 1; //Determine si l'utilisateur est connecté
         }
     }
